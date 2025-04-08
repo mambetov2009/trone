@@ -1,0 +1,111 @@
+/* Основные стили */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #e8f0f2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  color: #333;
+}
+
+/* Контейнер для формы */
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  overflow: hidden;
+}
+
+/* Заголовок */
+h2 {
+  font-size: 24px;
+  color: #4caf50;
+  margin-bottom: 20px;
+  font-weight: bold;
+}
+
+/* Форма */
+.form-container {
+  margin-top: 20px;
+}
+
+input {
+  width: 100%;
+  padding: 16px;
+  margin-bottom: 15px;
+  border-radius: 10px;
+  border: 2px solid #4caf50;
+  font-size: 16px;
+  box-sizing: border-box;
+  background-color: #f1f8e9;
+}
+
+input:focus {
+  border-color: #388e3c;
+  background-color: #fff;
+  outline: none;
+}
+
+/* Кнопка отправки */
+button {
+  width: 100%;
+  padding: 16px;
+  background-color: #4caf50;
+  color: white;
+  font-size: 16px;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #388e3c;
+}
+
+button:active {
+  background-color: #2e7d32;
+}
+
+/* Ошибка при отсутствии местоположения */
+.error-message {
+  display: none;
+  color: #b71c1c;
+  text-align: center;
+  font-size: 18px;
+  padding: 15px;
+  border: 1px solid #b71c1c;
+  border-radius: 10px;
+  background-color: #ffcdd2;
+  margin-top: 20px;
+}
+
+/* Стили для мобильных устройств */
+@media (max-width: 600px) {
+  .container {
+    width: 90%;
+    padding: 15px;
+  }
+
+  h2 {
+    font-size: 22px;
+  }
+
+  input {
+    padding: 14px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 14px;
+    font-size: 14px;
+  }
+}
